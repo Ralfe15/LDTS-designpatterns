@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-public class BarObserverTest {
+public class HumanClientTest {
     @Test
     public void addObserver() {
         Bar bar = new StringBar();
@@ -35,4 +35,8 @@ public class BarObserverTest {
         Mockito.verify(clientMock,
                 Mockito.never()).happyHourEnded(bar);
     }
+
+
+
+
 }

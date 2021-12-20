@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringBarTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-12-03T15:57:15" hostname="Rafaels-MacBook-Pro.local" time="0.014">
+<testsuite name="StringBarTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2021-12-20T16:18:36" hostname="Rafaels-MBP" time="0.103">
   <properties/>
-  <testcase name="happyHour()" classname="StringBarTest" time="0.014">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at Bar.notifyObservers(Bar.java:24)
-	at StringBar.notifyObservers(StringBar.java:3)
-	at Bar.startHappyHour(Bar.java:12)
-	at StringBar.startHappyHour(StringBar.java:3)
-	at StringBarTest.happyHour(StringBarTest.java:10)
+  <testcase name="happyHour()" classname="StringBarTest" time="0.024"/>
+  <testcase name="impatientStrategy()" classname="StringBarTest" time="0.009"/>
+  <testcase name="smartStrategyStartClosed()" classname="StringBarTest" time="0.009">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;dCbX-DcBa&gt; but was: &lt;AbCd-aBcD&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;dCbX-DcBa&gt; but was: &lt;AbCd-aBcD&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at StringBarTest.smartStrategyStartClosed(StringBarTest.java:72)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,6 +103,11 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
+  <testcase name="smartStrategyStartOpened()" classname="StringBarTest" time="0.006"/>
+  <testcase name="orderStringRecipe()" classname="StringBarTest" time="0.001"/>
+  <testcase name="ferengiStartClosed()" classname="StringBarTest" time="0.005"/>
+  <testcase name="ferengiAlreadyOpened()" classname="StringBarTest" time="0.017"/>
+  <testcase name="romulan()" classname="StringBarTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
